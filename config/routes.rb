@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   get 'greeter/hello'
   get 'greeter/goodbye'
+  get 'greeter/bingjin'
 
   root 'courses#index'
 
