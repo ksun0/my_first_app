@@ -8,6 +8,6 @@ class GreeterController < ApplicationController
   end
   def goodbye
   end 
-  def bingjin
+  def landingpage
   end
 end
