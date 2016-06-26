@@ -9,5 +9,6 @@ class GreeterController < ApplicationController
   def goodbye
   end 
   def landingpage
+    
   end
 end
