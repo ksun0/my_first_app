@@ -22,7 +22,6 @@ Book.create! [
 	{ name: "Beginning Ruby", author: "Peter Cooper" },
 	{ name: "Metaprogramming Ruby 2", author: "Paolo Perrotta" },
 	{ name: "Design Patterns in Ruby", author: "Russ Olsen" },
-	{ name: "DSFOSDFOIJDSOIJSODIJFIODSJ", author: "SDFJSODIFJSIDOFJOSDIFJ" }
 ]
 
 100.times { |index| Book.create! name: "Book#{index}", author: "Author#{index}" }
