@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  make: MyString
-  color: MyString
-  year: 1
+  title: MyString
+  note: MyText
+  book_id: 
 
 two:
-  make: MyString
-  color: MyString
-  year: 1
+  title: MyString
+  note: MyText
+  book_id: 

@@ -1,11 +1,24 @@
 Rails.application.routes.draw do
+  root to: 'books#index'
+
+  resources :books do
+    resources :notes, only: [:create, :destroy]
+  end
+
+  resources :sessions, only: [:new, :create, :destroy]
+
+  get "/login" => "sessions#new", as: "login"
+  delete "/logout" => "sessions#destroy", as: "logout"
+
+  resources :posts
+  resources :cars
   get 'courses/index'
 
   get 'greeter/hello'
   get 'greeter/goodbye'
   get 'greeter/landingpage'
 
-  root 'courses#index'
+ 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
